@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=family=Montserrat|Sree+Krushnadevaraya);
+
+html {
+  background: url(https://images.unsplash.com/photo-1501862169286-518c291e3eed?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjIzNjAyfQ&s=92ed7da0590a1b5e6fa4f80a6f755a15) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.messages {
+  font-family: 'Montserrat', sans-serif;
+  color: whitesmoke;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+.clock {
+  font-family: 'Sree+Krushnadevaraya', sans-serif;
+  font-size: 1600%;
+}
+
+.greeting {
+  font-size: 300%;
+}
+
+.searchbar {
+  padding-top: 5%
+}
+
+.search-container{
+  width: 50%;
+  margin: 0 auto;
+}
+
+input#search-bar{
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  outline: none;
+ }
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -62px;
+  right: -45px;
+}
+

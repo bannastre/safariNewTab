@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+
+<head>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="update()">
+  <script>
+    var d = new Date();
+    var minutes = d.getMinutes() < 10 ? `0${d.getMinutes()}` : `${d.getMinutes()}`
+    var time = `${d.getHours()}:${minutes}`
+    var mornOrEve = d.getHours() > 12 ? 'Good Afternoon, Chris' : 'Good Morning, Chris'
+
+    function update() {
+      document.getElementById("time").innerHTML = time;
+      document.getElementById("hello").innerHTML = mornOrEve;
+    }
+  </script>
+
+  <div class="messages">
+    <div class="clock">
+      <center id="time"></center>
+    </div>
+    <div class="greeting">
+      <center id="hello"></center>
+    </div>
+    <div class="searchbar">
+      <form class="search-container" action="http://www.google.com/search" method="GET" role="search">
+        <input type="text" id="search-bar" name="q" placeholder="What can I help you with today?" autofocus>
+        <a>
+          <img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png">
+        </a>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
